@@ -1,0 +1,172 @@
+:root{
+    --salmon:rgb(241, 139, 128);
+    --black: black;
+    --white:#fff;
+    --cyan:cyan;
+    --dsalmon: rgb(95, 45, 39);
+    --dcyan: rgb(45, 103, 103);
+}
+
+body{
+    transition: background-color ease-out .5s
+}
+
+*::selection{
+    background-color: var(--salmon);
+    color: var(--dsalmon);
+}
+
+body[theme="black"]{
+    background-color:var(--black);
+}
+
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color:var(--cyan);
+}
+
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section{
+    color: var(--dsalmon);
+}
+
+
+body[theme="white"]{
+    background-color:var(--white);
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+/*home*/
+.mama{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+    .vdodiv{
+        clip-path: circle(var(--clip) at 50% 50%);
+        z-index: 9;
+    }
+
+    
+
+    .heading{
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+        width:240px;
+        text-align: center;
+    }
+
+    /*row -translate-x-1/2 w-full py-1 flex items-center whitespace-nowrap*/
+    .row:nth-child(1){
+        margin-top: 3rem;
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0 4px;
+        transform: translateX(-1/2);
+    }
+
+    .row:nth-child(2){
+        margin-top: -3rem;
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0 4px;
+        transform: translateX(-1/3);
+    }
+
+    .row:nth-child(3){
+        margin-top: -3rem;
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0 4px;
+        transform: translateX(-2/3);
+    }
+
+    .row:nth-child(4){
+        margin-top: -3rem;
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0 4px;
+        transform: translateX(-3/4);
+    }
+
+    .btmtext{
+        width: 200px;
+        position: absolute;
+        left: 3%;
+        bottom: 3%;
+        z-index: 10;
+    }
+
+    /*craft*/
+    .craft{
+        margin-top:10rem;
+        padding: 8px 10px;
+        gap: 10px;
+        position: relative;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .ltext{
+        width: 40%;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+    }
+
+    .bade{
+        font-size: 4rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .button{
+        width: fit-content;
+        padding: 10px 5px;
+        border: 1px;
+        border-color: var(--dcyan);
+    }
+
+    .masker{
+        overflow: hidden;
+    }
+
+    .chacha{
+        display: inline-block;
+        transform: translateY(2);
+    }
+
+    .cards{
+        width: 50%;
+        
+    }
+
